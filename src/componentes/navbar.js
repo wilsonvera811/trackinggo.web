@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Navbar1() {
-    // Estados para controlar la apertura de cada dropdown
+    // Estados para controlar la apertura de cada dropdown.
     const [showServicios, setShowServicios] = useState(false);
     const [showProductos, setShowProductos] = useState(false);
 
