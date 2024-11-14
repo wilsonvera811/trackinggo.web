@@ -1,0 +1,56 @@
+.contenedor-producto {
+    margin-top: 20px;;
+    width: 500px;
+    height: 300px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: 0 3px 13px 1px rgb(0, 0, 0 / 9%);
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+.imagen-producto{
+    height: 150px;
+    width: 100%;
+}
+
+.contenedor-texto-producto {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    line-height: 1.5rem;
+    height: 100%; /* Asegura que ocupe todo el contenedor */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll; /* Añade scroll si el contenido excede la altura */
+}
+
+.contenedor-texto-producto::-webkit-scrollbar {
+    display: none;
+}
+
+.servicio.producto{
+    font-size: 1.3rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+
+.texto-producto{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.a{
+    font-size: 1.3rem;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    color:#E4593A;
+    align-self: flex-end; /* Alinea el enlace a la derecha */
+    margin-top: 10px; /* Añade espacio si es necesario */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+}

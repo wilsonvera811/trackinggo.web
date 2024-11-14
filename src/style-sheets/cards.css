@@ -1,0 +1,44 @@
+.contenedor-card {
+    margin: top 50px;;
+    width: 350px;
+    height: 300px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: 0 3px 13px 1px rgb(0, 0, 0 / 9%);
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+.imagen-card{
+    height: 150px;
+    width: 150px;
+}
+
+.contenedor-texto-card {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    line-height: 1.5rem;
+    height: 100%; /* Asegura que ocupe todo el contenedor */
+    overflow-y: scroll; /* Añade scroll si el contenido excede la altura */
+}
+
+.contenedor-texto-card::-webkit-scrollbar {
+    display: none;
+}
+
+.servicio.card{
+    font-size: 1.3rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+
+.texto-card{
+    font-size: 1.1rem;
+    text-align: justify;
+}

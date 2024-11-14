@@ -1,0 +1,25 @@
+.slider-swiper {
+  margin-top: 20px;
+  width: 1366px;
+  height: 312px; /* Ajusta la altura como prefieras */
+}
+
+.slider-swiper-slide {
+  background: #ffffff;  /* Color de fondo de cada slide */
+  border-radius: 12px;  /* Bordes redondeados para un diseño más atractivo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras para dar un efecto 3D */
+}
+
+.slider-slide-image {
+  width: 1366px;
+  height: 312px;
+  top: 96px;
+  object-fit: cover; /* Ajusta la imagen para cubrir todo el área sin deformarse */
+  border-radius: 10px;
+}
