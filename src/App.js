@@ -7,6 +7,7 @@ import Cards from "./componentes/cards.js";
 import Nosotros from "./componentes/nosotros.js";
 import Productos from "./componentes/productos.js";
 import ProductosPage from "./componentes/productosPage.js";
+import ServiciosPage from "./componentes/serviciosPage.js";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <div className="contenedor-principal">
           <Navbar1 />
           <Routes>
-          <Route
+            <Route
               path="/"
               element={
                 <>
@@ -45,6 +46,19 @@ function App() {
             />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/productos" element={<ProductosPage />} />
+            <Route
+              path="/servicios"
+              element={
+                <div className="contenedor-cards">
+                    <Cards servicio="SERVICIO 1" />
+                    <Cards servicio="SERVICIO 2" />
+                    <Cards servicio="SERVICIO 3" />
+                    <Cards servicio="SERVICIO 4" />
+                    <Cards servicio="SERVICIO 5" />
+                    <Cards servicio="SERVICIO 6" />
+                </div>
+              }
+            />
           </Routes>
         </div>
       </div>

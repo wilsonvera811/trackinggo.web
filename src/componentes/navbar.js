@@ -27,16 +27,19 @@ function Navbar1() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/nosotros">Nosotros</Nav.Link>
-                            <NavDropdown
-                                title="Servicios"
-                                id="basic-nav-dropdown"
-                                show={showServicios}
-                                onToggle={handleToggleServicios}
+                            <Nav.Link
+                                // title="Servicios"
+                                // id="basic-nav-dropdown"
+                                // show={showServicios}
+                                // onToggle={handleToggleServicios}
+                                as={Link}
+                                to="/servicios"
                             >
-                                <NavDropdown.Item href="#action/3.1">Servicio 1</NavDropdown.Item>
+                                Servicios
+                                {/* <NavDropdown.Item href="#action/3.1">Servicio 1</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Servicio 2</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Servicio 3</NavDropdown.Item>
-                            </NavDropdown>
+                                <NavDropdown.Item href="#action/3.3">Servicio 3</NavDropdown.Item> */}
+                            </Nav.Link>
                             <Nav.Link
                                 // title="Productos"
                                 // id="basic-nav-dropdown"
