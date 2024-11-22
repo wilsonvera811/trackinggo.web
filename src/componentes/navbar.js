@@ -5,12 +5,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+
 function Navbar1() {
     // Estados para controlar la apertura de cada dropdown.
     const [showServicios, setShowServicios] = useState(false);
     const [showProductos, setShowProductos] = useState(false);
 
-    // Funciones para alternar la visibilidad de los dropdowns
+    // Funciones para alternar la visibilidad de los dropdowns.
     const handleToggleServicios = (isOpen) => setShowServicios(isOpen);
     const handleToggleProductos = (isOpen) => setShowProductos(isOpen);
 

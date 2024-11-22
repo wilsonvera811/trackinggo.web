@@ -8,16 +8,6 @@ html,body {
   background-color: #0B152B;
 }
 
-h1 {
-  max-width: 940px;
-  font-size: 2.5em;
-  font-family: Lato,sans-serif;
-  font-weight: 700px;
-  line-height: 1.1;
-  margin: 40px 0;
-  color: #fff;
-}
-
 .App{
   min-height: 100vh;
   display: flex;
@@ -59,4 +49,24 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.contenedor-quienes-somos {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.contenedor-quienes-somos h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.contenedor-quienes-somos p {
+  text-align: justify;
+  margin-bottom: 20px;
 }

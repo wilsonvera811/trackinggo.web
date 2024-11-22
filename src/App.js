@@ -5,6 +5,7 @@ import Socios from './componentes/socios.js';
 import Cards from './componentes/cards.js';
 import Nosotros from './componentes/nosotros.js';
 import Productos from './componentes/productos.js';
+import QUIENES_SOMOS from './componentes/quienes_somos.js';
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
           <Productos
           producto='PRODUCTO 6'
           />
+        </div>
+        <div className='contenedor-quienes-somos'>
+          <QUIENES_SOMOS/>
         </div>
       </div>
     </div>
