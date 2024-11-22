@@ -1,5 +1,6 @@
 
-import '../style-sheets/nosotros.css'
+import '../style-sheets/nosotros.css';
+// import "../App.css";
 
 
 function Nosotros(){

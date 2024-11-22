@@ -1,19 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
 .contenedor-nosotros {
     width: 1100px;
     height: 400px;
     margin: 10px 10px 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribuye el contenido a ambos lados */
+    justify-content: space-between;
+    /* Distribuye el contenido a ambos lados */
     background-color: #fff;
     box-shadow: 0 3px 13px 1px rgb(0, 0, 0 / 9%);
-    padding: 20px; /* Añade algo de padding interno */
+    padding: 20px;
+    /* Añade algo de padding interno */
 }
 
 .contenedor-img-nosotros {
     width: 300px;
     height: 300px;
-    flex-shrink: 0; /* Asegura que la imagen no se reduzca en tamaño */
+    flex-shrink: 0;
+    /* Asegura que la imagen no se reduzca en tamaño */
 }
 
 .imagen-nosotros {
@@ -22,16 +39,20 @@
 }
 
 .contenedor-texto-nosotros {
-    width: calc(100% - 340px); /* Restamos el ancho de la imagen más algo de espacio */
+    width: calc(100% - 340px);
+    /* Restamos el ancho de la imagen más algo de espacio */
     max-height: 100%;
     font-size: 18px;
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
     padding: 20px;
     font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 1.5rem;
-    word-wrap: break-word; /* Fuerza el salto de línea si una palabra es demasiado larga */
-    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+    word-wrap: break-word;
+    /* Fuerza el salto de línea si una palabra es demasiado larga */
+    overflow-x: hidden;
+    /* Oculta cualquier desbordamiento horizontal */
 }
 
 .nombre-nosotros {
@@ -43,7 +64,8 @@
     font-size: 1.1rem;
     text-align: justify;
     white-space: normal;
-    margin-bottom: 20px; /* Añade un margen inferior para separar del botón */
+    margin-bottom: 20px;
+    /* Añade un margen inferior para separar del botón */
 }
 
 .button {
@@ -60,19 +82,22 @@
     justify-content: flex-end;
 }
 
-.button{
+.button {
     background-color: #E4593A;
     width: 120px;
     height: 40px;
     border-radius: 12px;
     color: #fff;
     border-radius: 12px;
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+
 }
 
 .contenedor-boton {
     display: flex;
-    justify-content: flex-end; /* Alinea el botón a la derecha */
-    padding: 10px; /* Opcional: Espacio interno en el contenedor */
+    justify-content: flex-end;
+    /* Alinea el botón a la derecha */
+    padding: 10px;
+    /* Opcional: Espacio interno en el contenedor */
 }

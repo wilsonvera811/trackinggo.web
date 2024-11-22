@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 function Navbar1() {
     // Estados para controlar la apertura de cada dropdown.
@@ -25,7 +26,7 @@ function Navbar1() {
                 <Container className='container'>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="componentes\quienes_somos.js">Nosotros</Nav.Link>
+                            <Nav.Link as={Link} to="/nosotros">Nosotros</Nav.Link>
                             <NavDropdown
                                 title="Servicios"
                                 id="basic-nav-dropdown"
@@ -36,16 +37,19 @@ function Navbar1() {
                                 <NavDropdown.Item href="#action/3.2">Servicio 2</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Servicio 3</NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown
-                                title="Productos"
-                                id="basic-nav-dropdown"
-                                show={showProductos}
-                                onToggle={handleToggleProductos}
+                            <Nav.Link
+                                // title="Productos"
+                                // id="basic-nav-dropdown"
+                                // show={showProductos}
+                                // onToggle={handleToggleProductos}
+                                as={Link}
+                                to="/productos"
                             >
-                                <NavDropdown.Item href="#action/3.1">Producto 1</NavDropdown.Item>
+                                Productos
+                                {/* <NavDropdown.Item href="#action/3.1">Producto 1</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Producto 2</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Producto 3</NavDropdown.Item>
-                            </NavDropdown>
+                                <NavDropdown.Item href="#action/3.3">Producto 3</NavDropdown.Item> */}
+                            </Nav.Link>
                             <Nav.Link href="#contact">Contacto</Nav.Link>
                             <Nav.Link href="#login">Ingresar</Nav.Link>
                         </Nav>
